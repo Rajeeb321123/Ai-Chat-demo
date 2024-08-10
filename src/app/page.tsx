@@ -196,8 +196,8 @@ export default function Chat() {
                         <AvatarImage className='avatarImage' src={'/robot.png'}
                         // onMouseOver={(e)=>e.currentTarget.src='/animated-robot.gif'} onMouseOut={(e)=>e.currentTarget.src='/robot.png'}
                         />
-                        <AvatarFallback className='bg-black text-white'>
-                          AI
+                        <AvatarFallback className='bg-transparent text-white'>
+                          
                         </AvatarFallback>
                       </Avatar>
                       <div className=' w-full bg-transparent group pl-3  rounded-md'>
@@ -248,7 +248,7 @@ export default function Chat() {
                             <AvatarImage className='avatarImage' src={'/robot.png'}
                             // onMouseOver={(e)=>e.currentTarget.src='/animated-robot.gif'} onMouseOut={(e)=>e.currentTarget.src='/robot.png'}
                             />
-                            <AvatarFallback className='bg-black text-white'>
+                            <AvatarFallback className='bg-transparent text-white'>
                               AI
                             </AvatarFallback>
                           </Avatar>
