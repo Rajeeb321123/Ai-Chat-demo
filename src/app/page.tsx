@@ -120,12 +120,13 @@ export default function Chat() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
 
-    const random = (Math.random() * 10000).toString()
+    let random = (Math.random() * 10000).toString()
     const userMessage: MessageProps = {
       role: 'user',
       content: input,
       id: random
     };
+    random = (Math.random() * 10000).toString()
     const systemMessage: MessageProps = {
       role: "assistant",
       content: '',

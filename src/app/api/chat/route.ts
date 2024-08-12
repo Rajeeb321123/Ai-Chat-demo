@@ -1,11 +1,8 @@
-import { createCohere } from '@ai-sdk/cohere';
-import { StreamingTextResponse, streamText } from 'ai';
-import { experimental_buildOpenAssistantPrompt } from 'ai/prompts';
-import { Client } from "@gradio/client";
+
+import { StreamingTextResponse} from 'ai';
 const axios = require('axios');
 
-// Define the Flask API URL
-const flaskApiUrl = 'http://127.0.0.1:5000/api/receive_data'; // Replace with your actual API endpoint
+
 
 
 
@@ -14,7 +11,15 @@ const flaskApiUrl = 'http://127.0.0.1:5000/api/receive_data'; // Replace with yo
 
 export async function POST(req: Request) {
   const { prompt, task } = await req.json();
-
+  // Define the Flask API URL for locally running flask
+  let flaskApiUrl = `http://127.0.0.1:5000/api/receive_data`; // Replace with your actual API endpoint
+  
+  // flask is deployed
+  if(process.env.FLASK_URL){
+    console.log("here")
+    flaskApiUrl = `${process.env.FLASK_URL}/api/receive_data`; // Replace with your actual API endpoint
+  }
+  
   const value = {
     chat: "",
     toNepali: 'Translate the following sentences or paragraphs to Nepali: ',
@@ -36,7 +41,7 @@ export async function POST(req: Request) {
     repetition_penalty:task==='chat'? 1.1:1.0,
   };
 
-  let result = '' 
+  let result
   await axios
     .post(flaskApiUrl, requestData, {
         headers: {
@@ -49,6 +54,9 @@ export async function POST(req: Request) {
     })
     .catch((error:any) => {
         console.error('Error making the request:', error.message);
+        const a = {data:'For result, please setup running FLASK_URL in env...'}
+        result = a
+        
     });
 
 
