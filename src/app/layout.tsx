@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ParticlesCanvas />
         {children}
-        <div className="fixed bottom-0 left-0 right-0 text-gray-400 text-xs tracking-wide mx-auto text-center">
+        <div className="md:block hidden fixed bottom-0 left-0 right-0 text-gray-400 text-xs tracking-wide mx-auto text-center">
           NepaliGPT v2
         </div>
       </body>

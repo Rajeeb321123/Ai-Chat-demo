@@ -289,7 +289,7 @@ export default function Chat() {
 
 
 
-                <form onSubmit={onSubmit} className='absolute w-full max-w-3xl mx-auto bottom-2 left-0 right-0 mb-2'>
+                <form onSubmit={onSubmit} className='absolute w-full max-w-3xl mx-auto md:bottom-2 bottom-0 left-0 right-0 mb-2'>
 
                   <AutosizeTextarea
                     className={cn(
