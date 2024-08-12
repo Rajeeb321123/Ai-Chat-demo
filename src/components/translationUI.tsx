@@ -133,7 +133,7 @@ export default function TranslationUI() {
                 </div>
 
             </div>
-            <div className=" h-[80dvh] grid md:hidden mt-1 mb-5 w-full max-w-4xl  gap-3  bg-stone-200  grid-rows-2">
+            <div className=" h-[70dvh] grid md:hidden mt-1 mb-5 w-full max-w-4xl  gap-3  bg-stone-200  grid-rows-2">
                 <div className='row-span-1 relative'>
                     <form onSubmit={translationChat.handleSubmit} className=''>
                         <Textarea
