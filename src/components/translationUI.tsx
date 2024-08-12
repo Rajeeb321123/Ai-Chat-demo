@@ -111,7 +111,7 @@ export default function TranslationUI() {
 
 
             {/* For mobile view  */}
-            <div className='md:hidden mt-16 flex justify-center gap-12 items-center relative'>
+            <div className='md:hidden mt-8 flex justify-center gap-12 items-center relative'>
                 <div className=' tracking-wider text-lg text-gray-500 ml-2 w-32 text-end'>
                     {translationTask === 'toNepali' ? "English" : 'Nepali'}
                 </div>
