@@ -3,7 +3,7 @@ import { Inter, Pacifico } from "next/font/google";
 import "./globals.css";
 import ParticlesCanvas from "@/components/particles/partcilesScence";
 
-export const pacifico = Pacifico({
+const pacifico = Pacifico({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-pacifico'
