@@ -162,7 +162,7 @@ const ParticlesCanvas = () => {
 
 
           <Canvas
-            camera={{ position: [1.5, 1.5, 4.5] }} gl={{ preserveDrawingBuffer: true }}
+            camera={{ position: [1.5, 1.5, 5.5] }} gl={{ preserveDrawingBuffer: true }}
             frameloop='always'
             dpr={[1, 2]}
           >

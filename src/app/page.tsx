@@ -143,7 +143,7 @@ export default function Chat() {
   }, [messages])
 
   return (
-    <section className="relative">
+    <section className=" h-[100dvh] relative">
 
 
       <div className=" flex h-screen flex-col items-center justify-center pb-3">
@@ -173,7 +173,7 @@ export default function Chat() {
               :
               <div className="mt-4 w-full max-w-3xl">
                 <ScrollArea
-                  className='mb-2  sm:h-[75vh] h-[60vh] px-2 pb-2'
+                  className='mb-2  h-[75dvh] px-2 pb-2'
                   ref={ref}
                 >
                   {!isLoading && messages.length === 0 &&

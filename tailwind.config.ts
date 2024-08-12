@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        pacifico: ['var(--font-pacifico)'],
+      },
       dropShadow: {
         glow: [
           "0 0px 20px rgba(255,255, 255, 0.35)",

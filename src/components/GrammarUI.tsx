@@ -31,7 +31,7 @@ export default function GrammarUI() {
             <form onSubmit={grammarChat.handleSubmit} className='relative m-1'>
                 <Textarea
                     className={cn(
-                        "pr-12  text-base  text-black tracking-wide  border-none outline-none rounded-none sm:rounded-3xl bg-stone-200 focus-visible:ring-transparent resize-none py-4 pl-6 h-[70vh] ",
+                        "pr-12  text-base  text-black tracking-wide  border-none outline-none rounded-none sm:rounded-3xl bg-stone-200 focus-visible:ring-transparent resize-none py-4 pl-6 h-[70dvh] ",
 
                     )}
                     value={grammarChat.input}
@@ -51,7 +51,10 @@ export default function GrammarUI() {
                         " absolute right-2 top-0 bottom-0 mt-auto mb-3 h-10 w-10  rounded-full bg-stone-200 group"
                     )}
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" className='group-disabled:fill-gray-300  fill-gray-700 w-full h-full hover:fill-green-600' x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"> <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M38,36.5c0,0.828-0.672,1.5-1.5,1.5 S35,37.328,35,36.5v-3.192C32.571,36.235,28.935,38,25,38c-7.168,0-13-5.832-13-13s5.832-13,13-13c4.279,0,8.285,2.112,10.716,5.65 c0.469,0.683,0.296,1.617-0.387,2.086c-0.683,0.471-1.615,0.297-2.086-0.387C31.372,16.626,28.29,15,25,15c-5.514,0-10,4.486-10,10 s4.486,10,10,10c3.191,0,6.11-1.525,7.972-4H29.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5H37c0.552,0,1,0.448,1,1V36.5z"></path> </svg>
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" className='group-disabled:fill-gray-300  fill-gray-700 w-full h-full hover:fill-green-600' x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"> <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M38,36.5c0,0.828-0.672,1.5-1.5,1.5 S35,37.328,35,36.5v-3.192C32.571,36.235,28.935,38,25,38c-7.168,0-13-5.832-13-13s5.832-13,13-13c4.279,0,8.285,2.112,10.716,5.65 c0.469,0.683,0.296,1.617-0.387,2.086c-0.683,0.471-1.615,0.297-2.086-0.387C31.372,16.626,28.29,15,25,15c-5.514,0-10,4.486-10,10 s4.486,10,10,10c3.191,0,6.11-1.525,7.972-4H29.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5H37c0.552,0,1,0.448,1,1V36.5z"></path> </svg> */}
+                    <span className='rounded-full w-full h-full group-disabled:bg-gray-300  bg-gray-700  hover:bg-green-600 text-white text-xl flex items-center justify-center font-pacifico'>
+                        Ne
+                    </span>
                 </Button>
             </form>
         </div>

@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Pacifico } from "next/font/google";
 import "./globals.css";
 import ParticlesCanvas from "@/components/particles/partcilesScence";
+
+export const pacifico = Pacifico({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-pacifico'
+})
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${pacifico.variable}`}>
       <body className={inter.className}>
-        <ParticlesCanvas/>
+        <ParticlesCanvas />
         {children}
         <div className="fixed bottom-0 left-0 right-0 text-gray-400 text-xs tracking-wide mx-auto text-center">
           NepaliGPT v2
