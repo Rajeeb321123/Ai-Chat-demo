@@ -143,7 +143,7 @@ export default function Chat() {
   }, [messages])
 
   return (
-    <section className=" h-[100dvh] relative">
+    <section className=" h-[100dvh] relative transition-all">
 
 
       <div className=" flex h-screen flex-col items-center justify-center pb-3">
