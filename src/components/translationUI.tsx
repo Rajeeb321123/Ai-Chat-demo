@@ -133,7 +133,7 @@ export default function TranslationUI() {
                 </div>
 
             </div>
-            <div className=" grid md:hidden mt-1 mb-5 w-full max-w-4xl  gap-3 h-full bg-stone-200  grid-rows-2">
+            <div className=" grid md:hidden mt-1 mb-5 w-full max-w-4xl  gap-3  bg-stone-200  grid-rows-2">
                 <div className='row-span-1 relative'>
                     <form onSubmit={translationChat.handleSubmit} className=''>
                         <Textarea
@@ -166,8 +166,8 @@ export default function TranslationUI() {
                         </Button>
                     </form>
                 </div>
-                <div className='row-span-1 bg-stone-100 relative'>
-                    <ScrollArea className='h-full w-full px-3 py-2 bg-transparent text-base  text-black tracking-wide  border-none outline-none focus-visible:ring-transparent resize-none whitespace-pre-wrap'>
+                <div className='row-span-1 bg-stone-100 relative flex'>
+                    <ScrollArea className=' w-full px-3 py-2 bg-transparent text-base  text-black tracking-wide  border-none outline-none focus-visible:ring-transparent resize-none whitespace-pre-wrap'>
                         {result==='' &&
                         <span className='text-muted-foreground'>
                         Translation in 
