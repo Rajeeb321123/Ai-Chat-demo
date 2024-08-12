@@ -172,7 +172,7 @@ export default function Chat() {
               :
               <div className="mt-4 w-full max-w-3xl">
                 <ScrollArea
-                  className='mb-2  h-[75vh]  px-2 pb-2'
+                  className='mb-2  sm:h-[75vh] h-[60vh] px-2 pb-2'
                   ref={ref}
                 >
                   {!isLoading && messages.length === 0 &&
