@@ -112,7 +112,7 @@ export default function TranslationUI() {
 
             {/* For mobile view  */}
             <div className='md:hidden mt-16 flex justify-center gap-12 items-center relative'>
-                <div className=' tracking-wider text-lg text-gray-500 ml-2'>
+                <div className=' tracking-wider text-lg text-gray-500 ml-2 w-32 text-end'>
                     {translationTask === 'toNepali' ? "English" : 'Nepali'}
                 </div>
                 <Button
@@ -128,7 +128,7 @@ export default function TranslationUI() {
                     <ArrowRightLeft />
                 </Button>
 
-                <div className=' tracking-wider text-lg text-gray-500 ml-2'>
+                <div className=' tracking-wider text-lg text-gray-500 ml-2 w-32 text-start'>
                     {translationTask === 'toEnglish' ? "English" : 'नेपाली'}
                 </div>
 
@@ -138,7 +138,7 @@ export default function TranslationUI() {
                     <form onSubmit={translationChat.handleSubmit} className=''>
                         <Textarea
                             className={cn(
-                                "  text-sm   text-black tracking-wide  border-none outline-none rounded-none bg-transparent focus-visible:ring-transparent foucs-visible:ring-of resize-none focus-visible:ring-offset-0",
+                                "  text-base   text-black tracking-wide  border-none outline-none rounded-none bg-transparent focus-visible:ring-transparent foucs-visible:ring-of resize-none focus-visible:ring-offset-0",
 
                             )}
                             value={translationChat.input}
@@ -159,7 +159,7 @@ export default function TranslationUI() {
                             }}
 
                             className={cn(
-                                " absolute text-sm tracking-wide text-white right-2 top-0 bottom-0 mt-auto mb-2 p-2  w-fit rounded-md flex my-aut h-fit bg-black hover:bg-green-600"
+                                " absolute text-base tracking-wide text-white right-2 top-0 bottom-0 mt-auto mb-2 p-2  w-fit rounded-md flex my-aut h-fit bg-black hover:bg-green-600"
                             )}
                         >
                             Translate
@@ -167,7 +167,7 @@ export default function TranslationUI() {
                     </form>
                 </div>
                 <div className='row-span-1 bg-stone-100 relative'>
-                    <ScrollArea className='h-full w-full px-3 py-2 bg-transparent text-sm  text-black tracking-wide  border-none outline-none focus-visible:ring-transparent resize-none whitespace-pre-wrap'>
+                    <ScrollArea className='h-full w-full px-3 py-2 bg-transparent text-base  text-black tracking-wide  border-none outline-none focus-visible:ring-transparent resize-none whitespace-pre-wrap'>
                         {result==='' &&
                         <span className='text-muted-foreground'>
                         Translation in 
